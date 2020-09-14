@@ -10,5 +10,5 @@ stylus -w ejercicio-stylus.styl
 ## Instalar Pug
 npm install pug-cli -g
 
-## Compilar de Pug a Html [carpeta /html]
+## Compilar de Pug a Html [carpeta /pug]
 pug -w --pretty ejercicio-stylus.pug
