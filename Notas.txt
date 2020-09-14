@@ -1,0 +1,5 @@
+## Instalar Stylus en la terminal
+npm install -g stylus
+
+## Compilar de Stylus a Css
+stylus -w ejercicio-stylus.styl
