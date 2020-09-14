@@ -1,11 +1,13 @@
 mixin caja(imagen, category, title, summary)
 	.caja
-		a(href="#",class="caja__imagen"): img(src="../images/"+imagen)
+		if(imagen)
+			a(href="#",class="caja__imagen"): img(src="../images/"+imagen)
 		.caja__contenido
 			span.caja__categoria=category
 			h3=title
 			p=summary
 		+estadistica
+
 
 mixin estadistica
 	.estadistica--articulos: ul
@@ -18,6 +20,7 @@ mixin estadistica
 		li
 			i.fas.fa-comment-alt
 			span 12
+
 
 doctype html
 html
